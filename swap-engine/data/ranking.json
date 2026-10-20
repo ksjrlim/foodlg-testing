@@ -1,0 +1,32 @@
+{
+  "config": "FoodLG swap ranking weights",
+  "version": "0.1.0",
+  "approved": false,
+  "approval_note": "Placeholder weights for development only. Not clinically reviewed; must be approved by a dietitian before ranking is shown to users.",
+  "daily_reference": {
+    "energy_kcal": 2000,
+    "sugar_g": 50,
+    "satfat_g": 20,
+    "sodium_mg": 2000
+  },
+  "weights": {
+    "energy_kcal": 1,
+    "sugar_g": 1,
+    "satfat_g": 1,
+    "sodium_mg": 1
+  },
+  "adverse_multiplier": 2,
+  "ease_factor": {
+    "very easy": 1.0,
+    "easy": 0.85,
+    "moderate": 0.7,
+    "hard": 0.5
+  },
+  "reconciliation": {
+    "tolerance": {
+      "sugar_g": 2
+    },
+    "approved": false,
+    "note": "Maximum difference between ingredient and published-reference results before verification is blocked. Placeholder; dietitian to set."
+  }
+}

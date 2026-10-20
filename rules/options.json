@@ -1,0 +1,105 @@
+{
+  "library": "FoodLG MVP drink-sugar options",
+  "version": "0.1.0",
+  "generated_from": {
+    "engine": "0.4.0",
+    "references": "0.2.0"
+  },
+  "options": [
+    {
+      "id": "OPT-KOPI-SIUDAI",
+      "scope": "drink_sugar",
+      "name": "Kopi siu dai",
+      "from_item": "Kopi",
+      "step": "smaller",
+      "stall_dependent": true,
+      "evidence_level": "published_standard",
+      "display_claim": "HealthHub standard drink: about ½ to 1 teaspoon less sugar per cup",
+      "display_note": "Your stall's preparation may differ.",
+      "benefit_tsp": 0.75,
+      "evidence_ref": {
+        "reference": "REF-HH-YUM-SENG",
+        "title": "Yum Seng! How to Order Healthier Drinks",
+        "url": "https://www.healthhub.sg/live-healthy/yum-seng-how-to-order-healthier-drinks",
+        "last_reviewed": "2025-06-27",
+        "reference_hash": "fnv1a32:1522522c",
+        "conflicts": [
+          "Table says 3.5 tsp; body text says 3 tsp"
+        ]
+      }
+    },
+    {
+      "id": "OPT-KOPI-O-KOSONG",
+      "scope": "drink_sugar",
+      "name": "Kopi-O kosong",
+      "from_item": "Kopi",
+      "step": "bigger",
+      "stall_dependent": false,
+      "evidence_level": "published_standard",
+      "display_claim": "HealthHub standard drink: about 4 teaspoons less sugar per cup",
+      "display_note": "Your stall's preparation may differ.",
+      "benefit_tsp": 4,
+      "evidence_ref": {
+        "reference": "REF-HH-SIU-DAI",
+        "title": "Say Siu Dai Instead",
+        "url": "https://www.healthhub.sg/live-healthy/say-siu-dai-instead",
+        "last_reviewed": "2025-10-28",
+        "reference_hash": "fnv1a32:1522522c",
+        "conflicts": []
+      }
+    },
+    {
+      "id": "OPT-TEH-SIUDAI",
+      "scope": "drink_sugar",
+      "name": "Teh siu dai",
+      "from_item": "Teh",
+      "step": "smaller",
+      "stall_dependent": true,
+      "evidence_level": "published_standard",
+      "display_claim": "HealthHub standard drink: about 1 teaspoon less sugar per cup",
+      "display_note": "Your stall's preparation may differ.",
+      "benefit_tsp": 1,
+      "evidence_ref": {
+        "reference": "REF-HH-SIU-DAI",
+        "title": "Say Siu Dai Instead",
+        "url": "https://www.healthhub.sg/live-healthy/say-siu-dai-instead",
+        "last_reviewed": "2025-10-28",
+        "reference_hash": "fnv1a32:1522522c",
+        "conflicts": []
+      }
+    },
+    {
+      "id": "OPT-TEH-O-KOSONG",
+      "scope": "drink_sugar",
+      "name": "Teh-O kosong",
+      "from_item": "Teh",
+      "step": "bigger",
+      "stall_dependent": false,
+      "evidence_level": "published_standard",
+      "display_claim": "HealthHub standard drink: about 5 teaspoons less sugar per cup",
+      "display_note": "Your stall's preparation may differ.",
+      "benefit_tsp": 5,
+      "evidence_ref": {
+        "reference": "REF-HH-SIU-DAI",
+        "title": "Say Siu Dai Instead",
+        "url": "https://www.healthhub.sg/live-healthy/say-siu-dai-instead",
+        "last_reviewed": "2025-10-28",
+        "reference_hash": "fnv1a32:1522522c",
+        "conflicts": []
+      }
+    },
+    {
+      "id": "OPT-PLAIN-WATER",
+      "scope": "drink_sugar",
+      "name": "Plain water instead",
+      "from_item": "Kopi or teh",
+      "step": "bigger",
+      "stall_dependent": false,
+      "evidence_level": "qualitative",
+      "display_claim": "No added sugar",
+      "display_note": null,
+      "benefit_tsp": null,
+      "evidence_ref": null
+    }
+  ]
+}

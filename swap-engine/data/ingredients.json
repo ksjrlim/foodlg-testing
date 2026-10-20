@@ -1,0 +1,141 @@
+{
+  "dataset": "FoodLG Nutrition Master Dataset — ingredients",
+  "version": "0.3.0",
+  "units": {
+    "basis": "per 100 g edible portion",
+    "energy_kcal": "kcal",
+    "carbohydrate_g": "g",
+    "sugar_g": "g",
+    "fat_g": "g",
+    "satfat_g": "g",
+    "sodium_mg": "mg"
+  },
+  "verification_levels": {
+    "unverified": "Entered but not compared with any source.",
+    "matched_secondary": "Values match a third-party copy of the source record; primary source not yet opened.",
+    "confirmed_primary": "Values confirmed on the primary source record by a named reviewer."
+  },
+  "ingredients": [
+    {
+      "id": "ING-RICE-WHITE-COOKED",
+      "name": "White rice, long-grain, regular, enriched, cooked (plain)",
+      "per100g": {
+        "energy_kcal": 130,
+        "carbohydrate_g": 28.2,
+        "sugar_g": 0.05,
+        "fat_g": 0.28,
+        "satfat_g": 0.077,
+        "sodium_mg": 1
+      },
+      "source": {
+        "name": "USDA FoodData Central",
+        "dataset": "SR Legacy",
+        "source_version": "April 2018 (final SR Legacy release)",
+        "record_id": "FDC 168878",
+        "record_name": "Rice, white, long-grain, regular, enriched, cooked",
+        "verification": "matched_secondary",
+        "checked_via": "https://getfoodfacts.com/food/rice-white-long-grain-regular-enriched-cooked-168878",
+        "checked_on": "2026-10-20",
+        "reviewer": null
+      },
+      "limitations": "Plain rice. Not suitable for chicken rice or nasi lemak rice, which are cooked with fat, stock or coconut milk."
+    },
+    {
+      "id": "ING-RICE-CHICKEN-RICE",
+      "name": "Chicken rice rice (cooked in chicken fat and stock)",
+      "per100g": {
+        "energy_kcal": null,
+        "carbohydrate_g": null,
+        "sugar_g": null,
+        "fat_g": null,
+        "satfat_g": null,
+        "sodium_mg": null
+      },
+      "source": {
+        "name": "PENDING",
+        "dataset": null,
+        "source_version": null,
+        "record_id": null,
+        "record_name": null,
+        "verification": "unverified",
+        "checked_via": null,
+        "checked_on": null,
+        "reviewer": null
+      },
+      "limitations": "No recipe-specific record yet. Candidates: an HPB FOCOS record for the rice component, a documented standard recipe, or lab analysis."
+    },
+    {
+      "id": "ING-CONDENSED-MILK-SWEETENED",
+      "name": "Milk, canned, condensed, sweetened",
+      "per100g": {
+        "energy_kcal": 321,
+        "carbohydrate_g": 54.4,
+        "sugar_g": 54.4,
+        "fat_g": 8.7,
+        "satfat_g": 5.49,
+        "sodium_mg": 127
+      },
+      "source": {
+        "name": "USDA FoodData Central",
+        "dataset": "SR Legacy",
+        "source_version": "April 2018 (final SR Legacy release)",
+        "record_id": "FDC 171275",
+        "record_name": "Milk, canned, condensed, sweetened",
+        "verification": "matched_secondary",
+        "checked_via": "https://getfoodfacts.com/food/milk-canned-condensed-sweetened-171275",
+        "checked_on": "2026-10-20",
+        "reviewer": null
+      },
+      "limitations": "Some stalls use sweetened creamer (vegetable fat) instead of dairy condensed milk; saturated fat differs."
+    },
+    {
+      "id": "ING-COFFEE-BREWED",
+      "name": "Coffee, brewed (kopi-O base)",
+      "per100g": {
+        "energy_kcal": null,
+        "carbohydrate_g": null,
+        "sugar_g": null,
+        "fat_g": null,
+        "satfat_g": null,
+        "sodium_mg": null
+      },
+      "source": {
+        "name": "PENDING",
+        "dataset": null,
+        "source_version": null,
+        "record_id": null,
+        "record_name": null,
+        "verification": "unverified",
+        "checked_via": null,
+        "checked_on": null,
+        "reviewer": null
+      },
+      "limitations": "Needed for the kopi-O kosong substitution, where removed condensed milk is replaced by more coffee. Local kopi powder is often roasted with sugar and margarine."
+    },
+    {
+      "id": "ING-PALM-OIL",
+      "name": "Oil, palm",
+      "per100g": {
+        "energy_kcal": 884,
+        "carbohydrate_g": 0,
+        "sugar_g": 0,
+        "fat_g": 100,
+        "satfat_g": 49.3,
+        "sodium_mg": 0
+      },
+      "source": {
+        "name": "USDA FoodData Central",
+        "dataset": "SR Legacy",
+        "source_version": "April 2018 (final SR Legacy release)",
+        "record_id": "FDC 171015",
+        "record_name": "Oil, palm",
+        "verification": "matched_secondary",
+        "checked_via": "https://getfoodfacts.com/food/oil-palm-171015",
+        "checked_on": "2026-10-20",
+        "reviewer": null
+      },
+      "limitations": "Stalls may use lard or blended oils. Oil actually absorbed by the food is unknown.",
+      "requires_retention": true
+    }
+  ]
+}

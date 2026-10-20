@@ -1,0 +1,484 @@
+{
+  "library": "FoodLG Swap Rule Library",
+  "version": "0.4.0",
+  "evidence_levels": {
+    "verified": "Supported by an appropriate source and checked by a dietitian.",
+    "estimated": "Calculated from documented ingredients and assumptions; uncertainty recorded.",
+    "insufficient": "No defensible quantitative estimate; no number may be displayed."
+  },
+  "dishes": [
+    {
+      "id": "CR",
+      "name": "Chicken rice"
+    },
+    {
+      "id": "LK",
+      "name": "Laksa"
+    },
+    {
+      "id": "NL",
+      "name": "Nasi lemak"
+    },
+    {
+      "id": "MG",
+      "name": "Mee goreng"
+    },
+    {
+      "id": "FN",
+      "name": "Fishball noodles"
+    },
+    {
+      "id": "YT",
+      "name": "Yong tau foo"
+    },
+    {
+      "id": "RP",
+      "name": "Roti prata"
+    },
+    {
+      "id": "CK",
+      "name": "Char kway teow"
+    },
+    {
+      "id": "TT",
+      "name": "Teh tarik"
+    },
+    {
+      "id": "KP",
+      "name": "Kopi"
+    }
+  ],
+  "rules": [
+    {
+      "id": "SWAP-CR-001",
+      "dish": "CR",
+      "modification": "Smaller rice portion",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [
+        {
+          "ingredient": "ING-RICE-CHICKEN-RICE",
+          "from_g": 200,
+          "to_g": 150
+        }
+      ],
+      "assumptions": [
+        "Standard portion 200 g cooked rice (illustrative, to verify)"
+      ],
+      "evidence": "estimated",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Recipe-specific chicken rice record not yet sourced (plain rice would understate fat and sodium removed)",
+        "Real portion size not measured"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-CR-002",
+      "dish": "CR",
+      "modification": "Less chilli and dark sauce",
+      "kind": "modification",
+      "ease": "very easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "No recipe-level nutrient data for the sauces",
+        "Amount of sauce actually used unknown"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-LK-001",
+      "dish": "LK",
+      "modification": "Leave half the gravy",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "HPB gives whole-dish values only; gravy share of sodium and saturated fat unknown"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-LK-002",
+      "dish": "LK",
+      "modification": "Smaller noodle portion",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Noodle ingredient record and portion not yet entered"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-NL-001",
+      "dish": "NL",
+      "modification": "Smaller coconut rice portion",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "No coconut rice ingredient record; plain rice would understate saturated fat"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-NL-002",
+      "dish": "NL",
+      "modification": "Egg instead of fried chicken wing",
+      "kind": "alternative side",
+      "ease": "moderate",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Side-dish records and portions not yet entered"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-MG-001",
+      "dish": "MG",
+      "modification": "Smaller portion",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Whole-dish record not yet entered, so scaling cannot be calculated"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-FN-001",
+      "dish": "FN",
+      "modification": "Drink less of the soup",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Sodium content of hawker soup stock not measured"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-YT-001",
+      "dish": "YT",
+      "modification": "Clear soup, fewer fried items",
+      "kind": "modification",
+      "ease": "easy",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Item-level records for fried and unfried pieces not entered"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-RP-001",
+      "dish": "RP",
+      "modification": "One piece instead of two",
+      "kind": "modification",
+      "ease": "moderate",
+      "changes": [],
+      "assumptions": [],
+      "evidence": "insufficient",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Per-piece record not yet entered"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-CK-001",
+      "dish": "CK",
+      "modification": "Less added oil",
+      "kind": "modification",
+      "ease": "moderate",
+      "changes": [
+        {
+          "ingredient": "ING-PALM-OIL",
+          "from_g": 25,
+          "to_g": 15,
+          "retained_fraction": null,
+          "retention_basis": null
+        }
+      ],
+      "assumptions": [
+        "Cook adds 25 g oil, request reduces to 15 g (illustrative, to verify)",
+        "Palm oil as proxy for stall oil"
+      ],
+      "evidence": "estimated",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Oil quantity per plate not measured",
+        "Lard would raise the saturated fat saving",
+        "Oil retained in the finished plate unknown: added oil is not the same as oil eaten"
+      ],
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-TT-001",
+      "dish": "TT",
+      "modification": "Siew dai (less sweet)",
+      "kind": "modification",
+      "ease": "very easy",
+      "changes": [
+        {
+          "ingredient": "ING-CONDENSED-MILK-SWEETENED",
+          "from_g": 30,
+          "to_g": 15
+        }
+      ],
+      "assumptions": [
+        "Regular cup uses 30 g condensed milk, siew dai about half (illustrative, to verify)"
+      ],
+      "evidence": "estimated",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Stall-to-stall variation not measured",
+        "Creamer may replace condensed milk"
+      ],
+      "quantity_source": {
+        "candidate": "HPB Siu Dai Toolkit (scoop and cup sizes)",
+        "url": "https://hpb.gov.sg/docs/default-source/pdf/Siu-Dai-Toolkit.pdf",
+        "status": "to be mapped to grams and confirmed"
+      },
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "reference_comparison": {
+        "reference": "REF-HH-SIU-DAI",
+        "from_item": "teh",
+        "to_item": "teh_siu_dai",
+        "expected": {
+          "from": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          },
+          "to": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "less"
+          }
+        }
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-KP-001",
+      "dish": "KP",
+      "modification": "Kopi-O kosong (black, no sugar)",
+      "kind": "substitution",
+      "ease": "moderate",
+      "changes": [
+        {
+          "ingredient": "ING-CONDENSED-MILK-SWEETENED",
+          "from_g": 30,
+          "to_g": 0
+        },
+        {
+          "ingredient": "ING-COFFEE-BREWED",
+          "from_g": 0,
+          "to_g": 30
+        }
+      ],
+      "assumptions": [
+        "Regular kopi uses 30 g condensed milk (illustrative, to verify)",
+        "Removed condensed milk replaced by the same weight of brewed coffee"
+      ],
+      "evidence": "estimated",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Brewed kopi record not yet sourced",
+        "Kopi made with sugar and evaporated milk would give a different result"
+      ],
+      "quantity_source": {
+        "candidate": "HPB Siu Dai Toolkit (scoop and cup sizes)",
+        "url": "https://hpb.gov.sg/docs/default-source/pdf/Siu-Dai-Toolkit.pdf",
+        "status": "to be mapped to grams and confirmed"
+      },
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "reference_comparison": {
+        "reference": "REF-HH-SIU-DAI",
+        "from_item": "kopi",
+        "to_item": "kopi_o_kosong",
+        "expected": {
+          "from": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          },
+          "to": {
+            "base": "coffee",
+            "milk": "none",
+            "sweetener": "none",
+            "level": "none"
+          }
+        }
+      },
+      "recipe_basis": "illustrative"
+    },
+    {
+      "id": "SWAP-KP-002",
+      "dish": "KP",
+      "modification": "Kopi siew dai",
+      "kind": "modification",
+      "ease": "very easy",
+      "changes": [
+        {
+          "ingredient": "ING-CONDENSED-MILK-SWEETENED",
+          "from_g": 30,
+          "to_g": 15
+        }
+      ],
+      "assumptions": [
+        "Siew dai uses about half the condensed milk (illustrative, to verify)"
+      ],
+      "evidence": "estimated",
+      "clinical_review": "pending",
+      "release_status": "draft",
+      "gaps": [
+        "Stall-to-stall variation not measured"
+      ],
+      "quantity_source": {
+        "candidate": "HPB Siu Dai Toolkit (scoop and cup sizes)",
+        "url": "https://hpb.gov.sg/docs/default-source/pdf/Siu-Dai-Toolkit.pdf",
+        "status": "to be mapped to grams and confirmed"
+      },
+      "context_validity": {
+        "status": "unconfirmed",
+        "basis": null,
+        "notes": "Ingredient and quantity not yet confirmed for Singapore hawker stalls"
+      },
+      "reference_comparison": {
+        "reference": "REF-HH-YUM-SENG",
+        "from_item": "kopi",
+        "to_item": "kopi_siu_dai",
+        "expected": {
+          "from": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          },
+          "to": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "less"
+          }
+        }
+      },
+      "recipe_basis": "illustrative"
+    }
+  ],
+  "rule_kinds": {
+    "modification": "Change quantity of an existing ingredient",
+    "substitution": "Remove one ingredient and add another; both sides are calculated",
+    "alternative side": "Replace a side dish"
+  },
+  "context_validity_levels": {
+    "unconfirmed": "No evidence yet that local stalls use this ingredient in this quantity.",
+    "partially_confirmed": "Some local evidence (e.g. a published local reference) but not stall measurement.",
+    "confirmed": "Supported by stall weighing, an HPB standard recipe or documented dietitian judgement."
+  }
+}

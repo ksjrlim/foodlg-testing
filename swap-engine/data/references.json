@@ -1,0 +1,173 @@
+{
+  "dataset": "FoodLG published whole-beverage references",
+  "version": "0.2.0",
+  "note": "Published comparisons of whole drinks. They are a separate evidence pathway from ingredient calculations and are never merged with them. Only items from the same reference document (same serving definition) may be compared.",
+  "conversions": [
+    {
+      "id": "CONV-SUGAR-TSP-G",
+      "from_unit": "tsp_sugar",
+      "to_unit": "sugar_g",
+      "factor": 5,
+      "source": {
+        "publisher": "Health Promotion Board (cited by reviewer as HPB Help Centre)",
+        "url": null,
+        "verification": "unverified"
+      },
+      "limitations": "Applies to granulated sugar only. Must not be used to infer the weight of a scoop of condensed milk."
+    }
+  ],
+  "references": [
+    {
+      "id": "REF-HH-SIU-DAI",
+      "source": {
+        "publisher": "Health Promotion Board, HealthHub",
+        "title": "Say Siu Dai Instead",
+        "url": "https://www.healthhub.sg/live-healthy/say-siu-dai-instead",
+        "last_reviewed": "2025-10-28",
+        "accessed": "2026-10-20",
+        "verification": "confirmed_primary"
+      },
+      "serving_definition": "One cup; cup size not stated",
+      "nutrient_basis": "tsp_sugar",
+      "covers": [
+        "sugar_g"
+      ],
+      "items": {
+        "teh": {
+          "value": 5,
+          "formulation": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          }
+        },
+        "teh_siu_dai": {
+          "value": 4,
+          "formulation": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "less"
+          }
+        },
+        "teh_o_kosong": {
+          "value": 0,
+          "formulation": {
+            "base": "tea",
+            "milk": "none",
+            "sweetener": "none",
+            "level": "none"
+          }
+        },
+        "kopi": {
+          "value": 4,
+          "formulation": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          }
+        },
+        "kopi_c_siu_dai": {
+          "value": 2.9,
+          "formulation": {
+            "base": "coffee",
+            "milk": "evaporated",
+            "sweetener": "sugar",
+            "level": "less"
+          }
+        },
+        "kopi_o_kosong": {
+          "value": 0,
+          "formulation": {
+            "base": "coffee",
+            "milk": "none",
+            "sweetener": "none",
+            "level": "none"
+          }
+        }
+      }
+    },
+    {
+      "id": "REF-HH-YUM-SENG",
+      "source": {
+        "publisher": "Health Promotion Board, HealthHub",
+        "title": "Yum Seng! How to Order Healthier Drinks",
+        "url": "https://www.healthhub.sg/live-healthy/yum-seng-how-to-order-healthier-drinks",
+        "last_reviewed": "2025-06-27",
+        "accessed": "2026-10-20",
+        "verification": "confirmed_primary"
+      },
+      "serving_definition": "One cup; cup size not stated",
+      "nutrient_basis": "tsp_sugar",
+      "covers": [
+        "sugar_g"
+      ],
+      "items": {
+        "teh": {
+          "value": 5,
+          "formulation": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          }
+        },
+        "teh_siu_dai": {
+          "value": 4,
+          "formulation": {
+            "base": "tea",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "less"
+          }
+        },
+        "teh_o_kosong": {
+          "value": 0,
+          "formulation": {
+            "base": "tea",
+            "milk": "none",
+            "sweetener": "none",
+            "level": "none"
+          }
+        },
+        "kopi": {
+          "value": 4,
+          "formulation": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "regular"
+          }
+        },
+        "kopi_siu_dai": {
+          "value": 3.5,
+          "conflict": {
+            "values": [
+              3.5,
+              3
+            ],
+            "note": "Table says 3.5 tsp; body text says 3 tsp"
+          },
+          "formulation": {
+            "base": "coffee",
+            "milk": "condensed",
+            "sweetener": "in milk",
+            "level": "less"
+          }
+        },
+        "kopi_o_kosong": {
+          "value": 0,
+          "formulation": {
+            "base": "coffee",
+            "milk": "none",
+            "sweetener": "none",
+            "level": "none"
+          }
+        }
+      }
+    }
+  ],
+  "context": "Published figures describe a standard drink, not a specific stall's recipe."
+}
