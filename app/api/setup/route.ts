@@ -34,3 +34,10 @@ export async function POST(req: Request) {
     await db.end();
   }
 }
+
+// TEMPORARY: GET form used once for initial hosted setup; removed afterwards.
+export async function GET(req: Request) {
+  const u = new URL(req.url);
+  const h = new Headers({ "x-setup-token": u.searchParams.get("token") ?? "", "content-type": "application/json" });
+  return POST(new Request(req.url, { method: "POST", headers: h, body: JSON.stringify({ reset: u.searchParams.get("reset") === "1" }) }));
+}
